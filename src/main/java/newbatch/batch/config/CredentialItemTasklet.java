@@ -10,12 +10,11 @@ import org.springframework.batch.repeat.RepeatStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import entity.Vid;
+import newbatch.dto.VidExpireDTO;
+import newbatch.entity.Vid;
+import newbatch.repository.VidRepo;
 
 import java.util.ArrayList;
-
-import newbtch.dto.VidExpireDTO;
-import repository.VidRepo;
 
 @Component
 public class CredentialItemTasklet implements Tasklet{
@@ -25,18 +24,18 @@ public class CredentialItemTasklet implements Tasklet{
 	@Override
 	public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception 
 	{
-		//System.out.println("Hello World");
-		List<VidExpireDTO> expiredVids = getExpiredVids();
-	
-		
-				for(int i=0; i<=4; i++) {
-					
-					System.out.println(expiredVids);
-				}
-				
-		// List<NotificationsRecord>
-		// loop thorugh the above list
-		//  send notifications servicd (By calling the notification service)
+		System.out.println("Hello World");
+//		List<VidExpireDTO> expiredVids = getExpiredVids();
+//	
+//		
+//				for(int i=0; i<=4; i++) {
+//					
+//					System.out.println(expiredVids);
+//				}
+//				
+//		// List<NotificationsRecord>
+//		// loop thorugh the above list
+//		//  send notifications servicd (By calling the notification service)
 	return null;
 	}
 	

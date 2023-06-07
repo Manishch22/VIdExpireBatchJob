@@ -1,4 +1,4 @@
-package entity;
+package newbatch.entity;
 
 import java.time.LocalDateTime;
 

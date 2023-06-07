@@ -1,4 +1,4 @@
-package newbtch.dto;
+package newbatch.dto;
 
 import java.time.LocalDate;
 
